@@ -1,0 +1,43 @@
+body,
+html {
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+.main-container {
+    /* background: url(./img/section-1.png) center top no-repeat; */
+    background: rgb(8, 0, 41);
+    background-size: cover;
+}
+.main-container-inner {
+    background: url(./img/section-1.png) center top no-repeat;
+    position: absolute;
+    top: 0;
+    min-height: 1915px;
+    width: 100%;
+}
+.screen-section {
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.screen-section-second {
+    background: url(./img/section-2.png);
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 1779px;
+    /* min-height: calc(100vh + 300px); */
+    /* min-height: 100vh; */
+}
+
+.screen-section-third {
+    background: url(./img/section-3.png) center bottom no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    margin-top: -450px;
+    position: relative;
+    z-index: 2;
+    min-height: 1286px;
+    /* margin: -150 0; */
+}
