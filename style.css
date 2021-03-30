@@ -33,6 +33,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 1779px;
+    margin-top: 230px;
     /* min-height: calc(100vh + 300px); */
     /* min-height: 100vh; */
 }
@@ -139,6 +140,7 @@ html {
 }
 .arrow-animate {
     animation: arrowAnimate 2s linear infinite;
+    animation-delay: 1s;
 }
 @keyframes arrowAnimate {
     0% {
@@ -223,4 +225,28 @@ html {
     font-size: 24px;
     line-height: 150%;
     color: #ffffff;
+}
+
+.phone-2-1 {
+    position: absolute;
+    right: 0;
+    top: -400px;
+    pointer-events: none;
+    animation: phoneAnimate 2s linear infinite;
+}
+.phone-2-2 {
+    top: -315px;
+    animation-delay: 0.3s;
+}
+.phone-2-3 {
+    top: -250px;
+    animation-delay: 0.5s;
+}
+.phone-2-4 {
+    top: -200px;
+    animation-delay: 0.8s;
+}
+.opacity-translate-right {
+    transform: translateX(-30px);
+    opacity: 0;
 }
