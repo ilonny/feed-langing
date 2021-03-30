@@ -20,6 +20,12 @@ html {
     position: relative;
     z-index: 1;
 }
+.screen-section-first {
+    padding-top: 140px;
+    min-height: initial;
+    height: calc(100vh - 140px);
+    margin-bottom: 140px;
+}
 .screen-section-second {
     background: url(./img/section-2.png);
     background-position-x: left;
@@ -40,4 +46,113 @@ html {
     z-index: 2;
     min-height: 1286px;
     /* margin: -150 0; */
+}
+.row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* logo */
+.logo-wrapper {
+    border-radius: 55px;
+    box-shadow: 0px 17px 92px -7px #601cb0;
+    animation: blinkLogoShadow 3s linear infinite;
+}
+.logo-wrapper img {
+    border-radius: 55px;
+}
+@keyframes blinkLogoShadow {
+    0% {
+        box-shadow: 0px 17px 92px -7px #601cb0;
+    }
+    50% {
+        box-shadow: 0px 17px 92px -7px #611cb094;
+    }
+    100% {
+        box-shadow: 0px 17px 92px -7px #601cb0;
+    }
+}
+
+/* end logo */
+
+.page-title {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 56.2759px;
+    text-align: center;
+    color: #ffffff;
+}
+.page-title span {
+    color: rgb(46, 255, 120);
+}
+
+.page-description {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 34px;
+}
+
+.join-btn {
+    background-color: #ecff77;
+    padding: 20px 70px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-top: 40px;
+    font-weight: 500;
+    transition: background-color 250ms ease;
+}
+.join-btn:hover {
+    background-color: #d2e269;
+}
+
+.qr-btn {
+  margin-top: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.qr-text {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 25px;
+}
+
+.screen-section-first--btn-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -26px;
+    bottom: 88px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+}
+
+.screen-section-first--phone {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.screen-section-first--phone-2 {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.transition-animate {
+  transition: all 250ms ease;
+}
+.opacity-translate-hidden {
+  opacity: 0;
+  transform: translateY(-30px);
 }
