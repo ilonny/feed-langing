@@ -113,17 +113,17 @@ html {
 }
 
 .qr-btn {
-  margin-top: 40px;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 .qr-text {
-  color: #ffffff;
-  margin: 0;
-  text-align: center;
-  margin-top: 40px;
-  line-height: 25px;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 25px;
 }
 
 .screen-section-first--btn-down {
@@ -138,21 +138,78 @@ html {
     z-index: 2;
 }
 
+
 .screen-section-first--phone {
-  position: absolute;
-  left: 0;
-  top: 0px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    animation: phoneAnimate 2s linear infinite;
+
 }
 .screen-section-first--phone-2 {
-  position: absolute;
-  right: 0;
-  top: 0px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    animation: phoneAnimate 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes phoneAnimate {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
+
 .transition-animate {
-  transition: all 250ms ease;
+    transition: all 250ms ease;
 }
 .opacity-translate-hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.opacity-hidden {
   opacity: 0;
-  transform: translateY(-30px);
+}
+
+.screen-section-second-circle-left {
+    position: absolute;
+    width: 1300px;
+    height: 1384px;
+    left: -300px;
+    top: -317px;
+    background: #470d85;
+    filter: blur(283px);
+    border-radius: 100%;
+    pointer-events: none;
+}
+.section-2-content {
+    position: relative;
+}
+.row-section-2-title {
+    padding-left: 470px;
+}
+.row-section-2-title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 56.2759px;
+    color: #ffffff;
+}
+
+.row-section-2-title h3 span {
+    color: rgb(46, 255, 120);
+}
+.row-section-2-title p {
+    color: rgb(46, 255, 120);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ffffff;
 }

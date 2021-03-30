@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let forTimeout = Number(el.dataset.delay);
         setTimeout(() => {
             el.classList.remove("opacity-translate-hidden");
+            el.classList.remove("opacity-hidden");
         }, forTimeout);
     });
     //click on down button - scroll to second Sections
