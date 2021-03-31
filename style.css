@@ -3,11 +3,13 @@ html {
     font-family: "Montserrat", Helvetica, sans-serif;
     background: rgb(8, 0, 41);
     overflow-x: hidden;
+    position: relative;
 }
 .main-container {
     /* background: url(./img/section-1.png) center top no-repeat; */
     background: rgb(8, 0, 41);
     background-size: cover;
+    overflow: hidden;
 }
 .main-container-inner {
     background: url(./img/section-1.png) center top no-repeat;
@@ -30,6 +32,7 @@ html {
     min-height: 100vh;
     position: relative;
     z-index: 1;
+    /* overflow-x: hidden; */
 }
 .section-content {
     max-width: 1920px;
@@ -209,6 +212,7 @@ html {
     left: 0;
     top: -140px;
     animation: phoneAnimate 3s linear infinite;
+    pointer-events: none;
 }
 .screen-section-first--phone-2 {
     position: absolute;
@@ -216,6 +220,7 @@ html {
     top: -140px;
     animation: phoneAnimate 3s linear infinite;
     animation-delay: 1.5s;
+    pointer-events: none;
 }
 @media screen and (max-width: 1721px) {
     .screen-section-first--phone {
@@ -279,9 +284,9 @@ html {
     }
 }
 @media screen and (max-width: 1400px) {
-  .row-section-2-title {
-      padding-left: 30px;
-  }
+    .row-section-2-title {
+        padding-left: 30px;
+    }
 }
 .row-section-2-title h3 {
     margin-top: 0;
@@ -338,10 +343,10 @@ html {
     }
 }
 @media screen and (max-width: 1400px) {
-  .phone-3-1 {
-      top: 580px;
-      left: -80px;
-  }
+    .phone-3-1 {
+        top: 580px;
+        left: -80px;
+    }
 }
 @media screen and (min-width: 1921px) {
     .phone-3-1 {
@@ -366,10 +371,10 @@ html {
     }
 }
 @media screen and (max-width: 1400px) {
-  .section-3-title {
-      right: 30px;
-      top: 930px;
-  }
+    .section-3-title {
+        right: 30px;
+        top: 930px;
+    }
 }
 .section-3-title h3 {
     margin-top: 0;
@@ -458,5 +463,59 @@ footer .section-content .links a:hover {
     text-decoration: underline;
 }
 .opacity-third-screen-hidden {
-  opacity: 0;
+    opacity: 0;
+}
+
+.screen-section-first--gradient-circle {
+    position: absolute;
+    z-index: 0;
+    top: -140px;
+    min-height: calc(100vh + 140px);
+    width: 100%;
+    /* height: 100%; */
+    --x: 9%;
+    --y: 9%;
+    background: radial-gradient(
+        circle at var(--x) var(--y),
+        rgb(16, 44, 109),
+        rgb(8, 0, 41) 30%
+    );
+    animation: a 0s ease-in-out -2.3s alternate infinite;
+    animation-name: x, y;
+    animation-duration: 5s, 3.9s;
+    /* animation-duration: 4.1s, 2.9s;
+    /* animation-duration: 4.1s, 2.9s; */
+}
+
+.screen-section-first--gradient-circle-2 {
+  position: absolute;
+  z-index: 0;
+  top: -140px;
+  min-height: calc(100vh + 140px);
+  width: 100%;
+  /* height: 100%; */
+  --x: 39%;
+  --y: 49%;
+  background: radial-gradient(
+      circle at var(--x) var(--y),
+      rgb(16, 44, 109),
+      rgb(8, 0, 41) 30%
+  );
+  animation: a 0s ease-in-out -2.3s alternate infinite;
+  animation-name: x, y;
+  animation-duration: 5s, 3.9s;
+  transition-delay: 2s;
+  /* animation-duration: 4.1s, 2.9s;
+  /* animation-duration: 4.1s, 2.9s; */
+}
+
+@keyframes x {
+    to {
+        --x: 91%;
+    }
+}
+@keyframes y {
+    to {
+        --y: 91%;
+    }
 }
