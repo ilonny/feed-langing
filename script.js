@@ -1,7 +1,7 @@
 if (window.outerWidth < 1100) {
     window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
     setTimeout(() => {
-        window.location.href="https://apps.apple.com/us/app/clubhouse-drop-in-audio-chat/id1503133294";
+        window.location.href = "https://apps.apple.com/us/app/clubhouse-drop-in-audio-chat/id1503133294";
     }, 30);
 }
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     firstAnimElements.forEach((el) => {
         let forTimeout = Number(el.dataset.delay);
         setTimeout(() => {
-            el.classList.remove("opacity-translate-hidden");
-            el.classList.remove("opacity-hidden");
+            window.requestAnimationFrame(() => {
+                el.classList.remove("opacity-translate-hidden");
+                el.classList.remove("opacity-hidden");
+            })
         }, forTimeout);
     });
     //click on down button - scroll to second Sections
@@ -39,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             animElements.forEach((el) => {
                 let forTimeout = Number(el.dataset.delay);
                 setTimeout(() => {
-                    el.classList.remove("opacity-translate-right");
+                    window.requestAnimationFrame(() => {
+                        el.classList.remove("opacity-translate-right");
+                    })
                 }, forTimeout);
             });
         }
@@ -57,7 +61,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             animElements.forEach((el) => {
                 let forTimeout = Number(el.dataset.delay);
                 setTimeout(() => {
-                    el.classList.remove("opacity-third-screen-hidden");
+                    window.requestAnimationFrame(() => {
+                        el.classList.remove("opacity-third-screen-hidden");
+                    })
                 }, forTimeout);
             });
         }
@@ -127,5 +133,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
         // update();
     }
 
-    parallax(".phone-3-1", -0.1);
+    // parallax(".phone-3-1", -0.1);
 });
