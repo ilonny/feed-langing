@@ -46,6 +46,7 @@ html {
     height: calc(100vh - 140px);
     margin-bottom: 140px;
     max-height: 1100px;
+    transform: translate3d(0, 0, 0);
 }
 .screen-section-second {
     /* background: url(./img/section-2.png); */
@@ -92,6 +93,7 @@ html {
     position: relative;
     z-index: 2;
     min-height: 1286px;
+    transform: translate3d(0, 0, 0);
     /* margin: -150 0; */
 }
 @media screen and (min-width: 1921px) {
@@ -213,6 +215,26 @@ html {
     top: -140px;
     animation: phoneAnimate 3s linear infinite;
     pointer-events: none;
+    transform: translate3d(0, 0, 0);
+}
+.screen-section-first--phone  .video-wrapper {
+    background: red;
+    width: 330px;
+    height: 759px;
+    transform-style: preserve-3d;
+    border-radius: 44px;
+    overflow: hidden;
+    transform: perspective(1525px) skewX(-2deg) skewY(2deg) rotateX(0deg) rotate(173.8deg) rotateY(-31deg);
+    position: absolute;
+    left: 231px;
+    top: 141px;
+}
+.screen-section-first--phone  .video-wrapper video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transform: rotate(180deg);
 }
 .screen-section-first--phone-2 {
     position: absolute;
@@ -221,7 +243,28 @@ html {
     animation: phoneAnimate 3s linear infinite;
     animation-delay: 1.5s;
     pointer-events: none;
+    transform: translate3d(0, 0, 0);
 }
+.screen-section-first--phone-2  .video-wrapper {
+    /* background: red; */
+    width: 333px;
+    height: 759px;
+    transform-style: preserve-3d;
+    border-radius: 44px;
+    overflow: hidden;
+    transform: perspective(1525px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-32deg);
+    position: absolute;
+    left: 403px;
+    top: 141px;
+}
+.screen-section-first--phone-2  .video-wrapper video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    /* transform: rotate(180deg); */
+}
+
 @media screen and (max-width: 1721px) {
     .screen-section-first--phone {
         left: -150px;
@@ -271,6 +314,7 @@ html {
     filter: blur(283px);
     border-radius: 100%;
     pointer-events: none;
+    transform: translate3d(0, 0, 0);
 }
 .section-2-content {
     position: relative;
@@ -336,18 +380,20 @@ html {
     position: absolute;
     left: 130px;
     top: 380px;
+    transform: translate3d(0, 0, 0);
+}
+@media screen and (max-width: 1420px) {
+    .phone-3-1 {
+        top: 580px;
+        left: -80px;
+    }
 }
 @media screen and (max-width: 1721px) {
     .phone-3-1 {
         top: 580px;
     }
 }
-@media screen and (max-width: 1400px) {
-    .phone-3-1 {
-        top: 580px;
-        left: -80px;
-    }
-}
+
 @media screen and (min-width: 1921px) {
     .phone-3-1 {
         top: 410px;
@@ -405,6 +451,7 @@ html {
     filter: blur(500px);
     transform: rotate(-118.86deg);
     pointer-events: none;
+    transform: translate3d(0, 0, 0);
 }
 
 .section-3-content {

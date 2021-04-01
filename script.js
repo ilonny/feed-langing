@@ -5,8 +5,8 @@ if (window.outerWidth < 1100) {
     }, 30);
 }
 document.addEventListener("DOMContentLoaded", function (event) {
-    document.querySelector(".main-container-inner").style.minHeight =
-        document.body.offsetHeight + "px";
+    // document.querySelector(".main-container-inner").style.minHeight =
+    //     document.body.offsetHeight + "px";
     let animFired = false;
     let animFired2 = false;
     let animFired3 = false;
@@ -123,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         document.addEventListener("scroll", update, true);
         document.addEventListener("resize", update);
-        update();
+        window.requestAnimationFrame(update)
+        // update();
     }
 
     parallax(".phone-3-1", -0.1);
