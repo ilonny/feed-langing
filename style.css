@@ -361,6 +361,25 @@ html {
     animation: phoneAnimate 2s ease infinite;
     transform: translateZ(0);
 }
+.phone-2-1 .video-wrapper {
+    /* background: red; */
+    width: 314px;
+    height: 704px;
+    transform-style: preserve-3d;
+    border-radius: 44px;
+    overflow: hidden;
+    transform: perspective(1525px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-3deg);
+    position: absolute;
+    left: 276px;
+    top: 168px;
+}
+.phone-2-1 .video-wrapper video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    /* transform: rotate(180deg); */
+}
 .blink-1 {
     position: absolute;
     /* background: #ff0000ad; */
@@ -392,6 +411,25 @@ html {
     left: 130px;
     top: 380px;
     transform: translate3d(0, 0, 0);
+}
+.phone-3-1  .video-wrapper {
+    /* background: red; */
+    width: 348px;
+    height: 801px;
+    transform-style: preserve-3d;
+    border-radius: 44px;
+    overflow: hidden;
+    transform: perspective(1825px) skewX(-9.5deg) skewY(4.5deg) rotateX(0deg) rotate(168.5deg) rotateY(-15deg);
+    position: absolute;
+    left: 255px;
+    top: 131px;
+}
+.phone-3-1  .video-wrapper video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transform: rotate(180deg);
 }
 @media screen and (max-width: 1420px) {
     .phone-3-1 {
