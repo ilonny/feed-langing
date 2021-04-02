@@ -213,7 +213,7 @@ html {
     position: absolute;
     left: 0;
     top: -140px;
-    animation: phoneAnimate 3s linear infinite;
+    animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     pointer-events: none;
     transform: translate3d(0, 0, 0);
     transform: translateZ(0);
@@ -248,7 +248,7 @@ html {
     position: absolute;
     right: 0;
     top: -140px;
-    animation: phoneAnimate 3s linear infinite;
+    animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     animation-delay: 1.5s;
     pointer-events: none;
     transform: translate3d(0, 0, 0);
@@ -260,14 +260,14 @@ html {
 .screen-section-first--phone-2  .video-wrapper {
     /* background: red; */
     width: 333px;
-    height: 759px;
+    height: 766px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
-    transform: perspective(1525px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-32deg);
+    transform: perspective(1525px) skewX(-1.5deg) skewY(2deg) rotateX(0deg) rotate(4deg) rotateY(-29deg);
     position: absolute;
     left: 403px;
-    top: 141px;
+    top: 137px;
 }
 .screen-section-first--phone-2  .video-wrapper video{
     position: absolute;
