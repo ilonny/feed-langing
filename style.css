@@ -9,7 +9,7 @@ html {
     /* background: url(./img/section-1.png) center top no-repeat; */
     background: rgb(8, 0, 41);
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .main-container-inner {
     background: url(./img/section-1.png) center top no-repeat;
@@ -218,6 +218,10 @@ html {
     transform: translate3d(0, 0, 0);
     transform: translateZ(0);
 }
+.screen-section-first--phone img{
+    position: relative;
+    z-index: 3;
+}
 .screen-section-first--phone  .video-wrapper {
     background: red;
     width: 330px;
@@ -235,7 +239,10 @@ html {
     right: 0;
     bottom: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     transform: rotate(180deg);
+    
 }
 .screen-section-first--phone-2 {
     position: absolute;
@@ -245,6 +252,10 @@ html {
     animation-delay: 1.5s;
     pointer-events: none;
     transform: translate3d(0, 0, 0);
+}
+.screen-section-first--phone-2 img{
+    position: relative;
+    z-index: 3;
 }
 .screen-section-first--phone-2  .video-wrapper {
     /* background: red; */
@@ -263,6 +274,8 @@ html {
     right: 0;
     bottom: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     /* transform: rotate(180deg); */
 }
 
@@ -328,7 +341,7 @@ html {
         padding-left: 270px;
     }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1430px) {
     .row-section-2-title {
         padding-left: 30px;
     }
@@ -361,27 +374,33 @@ html {
     animation: phoneAnimate 2s ease infinite;
     transform: translateZ(0);
 }
+.phone-2-1 img{
+    position: relative;
+    z-index: 3;
+}
 .phone-2-1 .video-wrapper {
     /* background: red; */
     width: 314px;
-    height: 704px;
+    height: 713px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
     transform: perspective(1525px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-3deg);
     position: absolute;
     left: 276px;
-    top: 168px;
+    top: 164px;
 }
 .phone-2-1 .video-wrapper video{
     position: absolute;
     right: 0;
     bottom: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     /* transform: rotate(180deg); */
 }
 .blink-1 {
-    position: absolute;
+    position: absolute !important;
     /* background: #ff0000ad; */
     right: 31px;
     top: 15px;
@@ -401,6 +420,7 @@ html {
     top: -150px;
     animation-delay: 0.6s;
 }
+
 .opacity-translate-right {
     transform: translateX(-30px);
     opacity: 0;
@@ -412,23 +432,27 @@ html {
     top: 380px;
     transform: translate3d(0, 0, 0);
 }
+.phone-3-1 img{
+    position: relative;
+    /* z-index: 3; */
+}
 .phone-3-1  .video-wrapper {
     /* background: red; */
-    width: 348px;
-    height: 801px;
+    width: 320px;
+    height: 601px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
-    transform: perspective(1825px) skewX(-9.5deg) skewY(4.5deg) rotateX(0deg) rotate(168.5deg) rotateY(-15deg);
+    transform: perspective(1306px) skewX(2deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
     position: absolute;
-    left: 255px;
-    top: 131px;
+    left: 275px;
+    top: 224px;
 }
 .phone-3-1  .video-wrapper video{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 100%;
+    width: 100%;
     transform: rotate(180deg);
 }
 @media screen and (max-width: 1420px) {
