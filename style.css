@@ -12,6 +12,7 @@ body, html {
     /* background: rgb(8, 0, 41);
     background-size: cover;
     overflow: hidden; */
+    overflow: hidden;
 }
 
 .main-container-inner {
@@ -286,20 +287,20 @@ body, html {
 
 .screen-section-first--phone-2 .video-wrapper {
     /* background: red; */
-    width: 326px;
-    height: 766px;
+    width: 342px;
+    height: 767px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
-    transform: perspective(1525px) skewX(-1.5deg) skewY(2deg) rotateX(0deg) rotate(4deg) rotateY(-29deg);
+    transform: perspective(1325px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-34deg);
     position: absolute;
-    left: 407px;
+    left: 396px;
     top: 137px;
 }
 
 .screen-section-first--phone-2 .video-wrapper video {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
     height: 100%;
     width: 100%;
@@ -420,14 +421,14 @@ body, html {
 
 .phone-2-1 .video-wrapper {
     /* background: red; */
-    width: 314px;
-    height: 713px;
+    width: 313px;
+    height: 707px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
-    transform: perspective(1525px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-3deg);
+    transform: perspective(1825px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-4deg);
     position: absolute;
-    left: 276px;
+    left: 277px;
     top: 164px;
 }
 
@@ -477,7 +478,11 @@ body, html {
     top: 380px;
     transform: translate3d(0, 0, 0);
 }
-
+.blink-3 {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
 .phone-3-1 img {
     position: relative;
     /* z-index: 3; */
@@ -486,13 +491,13 @@ body, html {
 .phone-3-1 .video-wrapper {
     /* background: red; */
     width: 320px;
-    height: 601px;
+    height: 569px;
     transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
-    transform: perspective(1306px) skewX(2deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
+    transform: perspective(1606px) skewX(1.5deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
     position: absolute;
-    left: 275px;
+    left: 266px;
     top: 224px;
 }
 
@@ -709,6 +714,7 @@ footer .section-content .links a:hover {
     left: -140px;
     z-index: 1;
 }
+
 .ellipse-3 {
     position: absolute;
     top: -140px;

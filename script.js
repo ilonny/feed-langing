@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 .querySelector(".opacity-hidden-section-3")
                 .classList.remove("opacity-hidden-section-3");
         }
-        if (scrollY > 2300 && !animFired3) {
+        if (scrollY > 1800 && !animFired3) {
             animFired3 = true;
             let animElements = document.querySelectorAll(
                 ".opacity-third-screen-hidden"
