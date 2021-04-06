@@ -1,3 +1,33 @@
+const fadeOutEffect = () => {
+    let fadeTarget = document.getElementById("cookie-wrapper");
+    fadeTarget.style.opacity = 0;
+    setTimeout(() => {
+        fadeTarget.style.display = 'none';
+    }, 250);
+    // let fadeEffect = setInterval(function () {
+    //     if (!fadeTarget.style.opacity) {
+    //         fadeTarget.style.opacity = 1;
+    //     }
+    //     if (fadeTarget.style.opacity > 0) {
+    //         fadeTarget.style.opacity -= 0.1;
+    //     } else {
+    //         clearInterval(fadeEffect);
+    //     }
+    // }, 200);
+}
+// function removeCookieWrapper = () => {
+// }
+
+const addScript = (attribute, text, callback) => {
+    var s = document.createElement('script');
+    for (var attr in attribute) {
+        s.setAttribute(attr, attribute[attr] ? attribute[attr] : null)
+    }
+    s.innerHTML = text;
+    s.onload = callback;
+    document.body.appendChild(s);
+}
+
 if (window.outerWidth < 1100) {
     window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
     setTimeout(() => {
@@ -5,6 +35,17 @@ if (window.outerWidth < 1100) {
     }, 30);
 }
 document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById('cookieNo').addEventListener('click', () => {
+        fadeOutEffect();
+    })
+    document.getElementById('cookieYes').addEventListener('click', () => {
+        fadeOutEffect();
+        addScript({
+            // src: 'https://www.google.com',
+            type: 'text/javascript',
+            // async: null
+        }, 'console.log(1231212)', function () { });
+    })
     // document.querySelector(".main-container-inner").style.minHeight =
     //     document.body.offsetHeight + "px";
     let animFired = false;
