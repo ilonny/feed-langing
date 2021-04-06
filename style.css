@@ -248,7 +248,7 @@ body, html {
 }
 
 .screen-section-first--phone .video-wrapper {
-    background: red;
+    /* background: red; */
     width: 330px;
     height: 759px;
     transform-style: preserve-3d;
