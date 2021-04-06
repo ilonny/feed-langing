@@ -52,10 +52,22 @@ body, html {
 .screen-section-first {
     padding-top: 140px;
     min-height: initial;
+    height: 1098px;
     height: calc(100vh - 140px);
     margin-bottom: 140px;
-    max-height: 1100px;
+    /* max-height: 1100px; */
     transform: translate3d(0, 0, 0);
+    max-height: 1000px;
+}
+
+@media screen and (max-height: 900px) {
+    .screen-section-first {
+        padding-top: 30px;
+        height: calc(100vh + 50px);
+    }
+    .section-content {
+        transform: scale(0.8);
+    }
 }
 
 .screen-section-second {
@@ -478,11 +490,13 @@ body, html {
     top: 380px;
     transform: translate3d(0, 0, 0);
 }
+
 .blink-3 {
     position: absolute !important;
     width: 100%;
     height: 100%;
 }
+
 .phone-3-1 img {
     position: relative;
     /* z-index: 3; */
