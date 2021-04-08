@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     window.addEventListener("scroll", (e) => {
         console.log("scroll", window.scrollY);
         const { scrollY } = window;
-        if (scrollY > 810 && !animFired2) {
+        if (scrollY > 510 && !animFired2) {
             animFired2 = true;
             //animate second sections
             let animElements = document.querySelectorAll(
