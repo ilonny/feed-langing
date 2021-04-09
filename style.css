@@ -67,7 +67,12 @@ body, html {
             transform: translate3d(0, 0, 0);
     max-height: 1000px;
 }
-
+@media screen and (max-height: 1033px) {
+    .screen-section-first {
+        padding-top: 30px;
+        height: calc(100vh);
+    }
+}
 @media screen and (max-height: 900px) {
     .screen-section-first {
         padding-top: 30px;
@@ -77,6 +82,20 @@ body, html {
         -webkit-transform: scale(0.8);
             -ms-transform: scale(0.8);
                 transform: scale(0.8);
+    }
+}
+
+@media screen and (max-height: 852px) {
+    .screen-section-first {
+        padding-top: 20px;
+        height: calc(100vh + 50px);
+    }
+    .section-content {
+        top: -100px;
+        height: calc(100vh + 200px);
+        -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+                transform: scale(0.7);
     }
 }
 
