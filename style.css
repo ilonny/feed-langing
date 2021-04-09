@@ -64,15 +64,17 @@ body, html {
     margin-bottom: 140px;
     /* max-height: 1100px; */
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     max-height: 1000px;
 }
+
 @media screen and (max-height: 1033px) {
     .screen-section-first {
         padding-top: 30px;
         height: calc(100vh);
     }
 }
+
 @media screen and (max-height: 900px) {
     .screen-section-first {
         padding-top: 30px;
@@ -80,8 +82,8 @@ body, html {
     }
     .section-content {
         -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-                transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
     }
 }
 
@@ -94,8 +96,8 @@ body, html {
         top: -100px;
         height: calc(100vh + 200px);
         -webkit-transform: scale(0.7);
-            -ms-transform: scale(0.7);
-                transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
     }
 }
 
@@ -149,7 +151,7 @@ body, html {
     z-index: 2;
     min-height: 1286px;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     /* margin: -150 0; */
 }
 
@@ -165,11 +167,11 @@ body, html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 /* logo */
@@ -177,9 +179,9 @@ body, html {
 .logo-wrapper {
     border-radius: 55px;
     -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
-            box-shadow: 0px 17px 92px -7px #601cb0;
+    box-shadow: 0px 17px 92px -7px #601cb0;
     -webkit-animation: blinkLogoShadow 3s linear infinite;
-            animation: blinkLogoShadow 3s linear infinite;
+    animation: blinkLogoShadow 3s linear infinite;
 }
 
 .logo-wrapper img {
@@ -189,30 +191,30 @@ body, html {
 @-webkit-keyframes blinkLogoShadow {
     0% {
         -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
-                box-shadow: 0px 17px 92px -7px #601cb0;
+        box-shadow: 0px 17px 92px -7px #601cb0;
     }
     50% {
         -webkit-box-shadow: 0px 17px 92px -7px #611cb094;
-                box-shadow: 0px 17px 92px -7px #611cb094;
+        box-shadow: 0px 17px 92px -7px #611cb094;
     }
     100% {
         -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
-                box-shadow: 0px 17px 92px -7px #601cb0;
+        box-shadow: 0px 17px 92px -7px #601cb0;
     }
 }
 
 @keyframes blinkLogoShadow {
     0% {
         -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
-                box-shadow: 0px 17px 92px -7px #601cb0;
+        box-shadow: 0px 17px 92px -7px #601cb0;
     }
     50% {
         -webkit-box-shadow: 0px 17px 92px -7px #611cb094;
-                box-shadow: 0px 17px 92px -7px #611cb094;
+        box-shadow: 0px 17px 92px -7px #611cb094;
     }
     100% {
         -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
-                box-shadow: 0px 17px 92px -7px #601cb0;
+        box-shadow: 0px 17px 92px -7px #601cb0;
     }
 }
 
@@ -287,9 +289,9 @@ body, html {
 
 .arrow-animate {
     -webkit-animation: arrowAnimate 2s linear infinite;
-            animation: arrowAnimate 2s linear infinite;
+    animation: arrowAnimate 2s linear infinite;
     -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 @-webkit-keyframes arrowAnimate {
@@ -321,12 +323,12 @@ body, html {
     left: 0;
     top: -140px;
     -webkit-animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-            animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     pointer-events: none;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .screen-section-first--phone img {
@@ -340,11 +342,11 @@ body, html {
     width: 330px;
     height: 759px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
     -webkit-transform: perspective(1525px) skewX(-2deg) skewY(2deg) rotateX(0deg) rotate(173.8deg) rotateY(-31deg);
-            transform: perspective(1525px) skewX(-2deg) skewY(2deg) rotateX(0deg) rotate(173.8deg) rotateY(-31deg);
+    transform: perspective(1525px) skewX(-2deg) skewY(2deg) rotateX(0deg) rotate(173.8deg) rotateY(-31deg);
     position: absolute;
     left: 231px;
     top: 141px;
@@ -357,10 +359,10 @@ body, html {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .screen-section-first--phone-2 {
@@ -368,12 +370,12 @@ body, html {
     right: 0;
     top: -140px;
     -webkit-animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-            animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    animation: phoneAnimate 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    animation-delay: 1.5s;
     pointer-events: none;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .screen-section-first--phone-2 img {
@@ -387,11 +389,11 @@ body, html {
     width: 342px;
     height: 767px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
     -webkit-transform: perspective(1325px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-34deg);
-            transform: perspective(1325px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-34deg);
+    transform: perspective(1325px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(4deg) rotateY(-34deg);
     position: absolute;
     left: 396px;
     top: 137px;
@@ -405,7 +407,7 @@ body, html {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     /* transform: rotate(180deg); */
 }
 
@@ -430,30 +432,30 @@ body, html {
 @-webkit-keyframes phoneAnimate {
     0% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(20px);
-                transform: translateY(20px);
+        transform: translateY(20px);
     }
     100% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
 @keyframes phoneAnimate {
     0% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(20px);
-                transform: translateY(20px);
+        transform: translateY(20px);
     }
     100% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -466,8 +468,8 @@ body, html {
 .opacity-translate-hidden {
     opacity: 0;
     -webkit-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
 }
 
 .opacity-hidden {
@@ -482,11 +484,11 @@ body, html {
     top: -317px;
     background: #470d85;
     -webkit-filter: blur(283px);
-            filter: blur(283px);
+    filter: blur(283px);
     border-radius: 100%;
     pointer-events: none;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .section-2-content {
@@ -497,7 +499,7 @@ body, html {
     padding-left: 470px;
 }
 
-@media screen and (max-width: 1721px) {
+@media screen and (max-width: 1791px) {
     .row-section-2-title {
         padding-left: 270px;
     }
@@ -536,9 +538,9 @@ body, html {
     top: -390px;
     pointer-events: none;
     -webkit-animation: phoneAnimate 2s ease infinite;
-            animation: phoneAnimate 2s ease infinite;
+    animation: phoneAnimate 2s ease infinite;
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .phone-2-1 img {
@@ -552,11 +554,11 @@ body, html {
     width: 313px;
     height: 707px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     border-radius: 44px;
     overflow: hidden;
     -webkit-transform: perspective(1825px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-4deg);
-            transform: perspective(1825px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-4deg);
+    transform: perspective(1825px) skewX(-1.5deg) skewY(1deg) rotateX(0deg) rotate(2deg) rotateY(-4deg);
     position: absolute;
     left: 277px;
     top: 164px;
@@ -569,7 +571,7 @@ body, html {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     /* transform: rotate(180deg); */
 }
 
@@ -584,27 +586,27 @@ body, html {
     top: -325px;
     right: 70px;
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 .phone-2-3 {
     top: -230px;
     right: 30px;
     -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .phone-2-4 {
     right: 0;
     top: -150px;
     -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .opacity-translate-right {
     -webkit-transform: translateX(-30px);
-        -ms-transform: translateX(-30px);
-            transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
     opacity: 0;
 }
 
@@ -613,7 +615,7 @@ body, html {
     left: 130px;
     top: 380px;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .blink-3 {
@@ -632,11 +634,11 @@ body, html {
     width: 320px;
     height: 569px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     border-radius: 20px;
     overflow: hidden;
     -webkit-transform: perspective(1606px) skewX(1.5deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
-            transform: perspective(1606px) skewX(1.5deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
+    transform: perspective(1606px) skewX(1.5deg) skewY(-6.5deg) rotateX(0deg) rotate(180deg) rotateY(-14deg);
     position: absolute;
     left: 279px;
     top: 228px;
@@ -648,8 +650,8 @@ body, html {
     bottom: 0;
     width: 100%;
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1563px) {
@@ -664,6 +666,7 @@ body, html {
         top: 580px;
     }
 }
+
 @media screen and (max-width: 1800px) {
     .phone-3-1 {
         top: 580px;
@@ -732,19 +735,32 @@ body, html {
     top: 520px;
     background: #520ead;
     -webkit-filter: blur(500px);
-            filter: blur(500px);
+    filter: blur(500px);
     -webkit-transform: rotate(-118.86deg);
-        -ms-transform: rotate(-118.86deg);
-            transform: rotate(-118.86deg);
+    -ms-transform: rotate(-118.86deg);
+    transform: rotate(-118.86deg);
     pointer-events: none;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .section-3-content {
     position: relative;
     z-index: 3;
     padding-top: 220px;
+}
+
+@media screen and (max-height: 960px) {
+    .section-3-content {
+        padding-top: 30px;
+        transform: scale(0.8);
+    }
+    .screen-section-third {
+
+    }
+    .screen-section-second {
+        margin-bottom: 150px;
+    }
 }
 
 @media screen and (min-width: 1921px) {
@@ -773,11 +789,11 @@ footer .section-content {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     max-width: 1024px;
     margin: 0 auto;
     /* padding-top: 35px; */
@@ -793,10 +809,10 @@ footer .section-content .links {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 footer .section-content .links a {
@@ -804,15 +820,15 @@ footer .section-content .links a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     min-width: 160px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     color: #fff;
     margin-bottom: 20px;
     text-decoration: none;
@@ -839,11 +855,11 @@ footer .section-content .links a:hover {
     background: -o-radial-gradient( var(--x) var(--y), circle, rgb(16, 44, 109), rgb(8, 0, 41) 30%);
     background: radial-gradient( circle at var(--x) var(--y), rgb(16, 44, 109), rgb(8, 0, 41) 30%);
     -webkit-animation: a 0s ease-in-out -2.3s alternate infinite;
-            animation: a 0s ease-in-out -2.3s alternate infinite;
+    animation: a 0s ease-in-out -2.3s alternate infinite;
     -webkit-animation-name: x, y;
-            animation-name: x, y;
+    animation-name: x, y;
     -webkit-animation-duration: 5s, 3.9s;
-            animation-duration: 5s, 3.9s;
+    animation-duration: 5s, 3.9s;
     /* animation-duration: 4.1s, 2.9s;
     /* animation-duration: 4.1s, 2.9s; */
 }
@@ -860,14 +876,14 @@ footer .section-content .links a:hover {
     background: -o-radial-gradient( var(--x) var(--y), circle, rgb(16, 44, 109), rgb(8, 0, 41) 30%);
     background: radial-gradient( circle at var(--x) var(--y), rgb(16, 44, 109), rgb(8, 0, 41) 30%);
     -webkit-animation: a 0s ease-in-out -2.3s alternate infinite;
-            animation: a 0s ease-in-out -2.3s alternate infinite;
+    animation: a 0s ease-in-out -2.3s alternate infinite;
     -webkit-animation-name: x, y;
-            animation-name: x, y;
+    animation-name: x, y;
     -webkit-animation-duration: 5s, 3.9s;
-            animation-duration: 5s, 3.9s;
+    animation-duration: 5s, 3.9s;
     -webkit-transition-delay: 2s;
-         -o-transition-delay: 2s;
-            transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
     /* animation-duration: 4.1s, 2.9s;
   /* animation-duration: 4.1s, 2.9s; */
 }
@@ -921,11 +937,11 @@ footer .section-content .links a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-radius: 1000px;
     background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
@@ -945,13 +961,16 @@ footer .section-content .links a:hover {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
 }
+
 .cookie-wrapper a {
     color: #fff;
     text-decoration: underline;
 }
+
 .cookie-wrapper a:hover {
     text-decoration: none;
 }
+
 .cookie-wrapper button {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
