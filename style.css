@@ -692,6 +692,7 @@ body, html {
     top: 830px;
     z-index: 3;
 }
+
 @media screen and (max-width: 1721px) {
     .section-3-title {
         right: 330px;
@@ -704,20 +705,20 @@ body, html {
         /* top: 930px; */
     }
 }
+
 @media screen and (max-width: 1300px) {
     .section-3-title {
         right: 270px;
         top: 930px;
     }
 }
+
 @media screen and (max-width: 1190px) {
     .section-3-title {
         right: 70px;
         top: 930px;
     }
 }
-
-
 
 .section-3-title h3 {
     margin-top: 0;
@@ -1001,4 +1002,14 @@ footer .section-content .links a:hover {
 .cookie-wrapper button:hover {
     background-color: #F56B63;
     color: #fff;
+}
+
+.cookie-wrapper button.green {
+    background-color: #26FE8A;
+    color: #000;
+}
+
+.cookie-wrapper button.green:hover {
+    background-color: #67FEAD;
+    color: #000;
 }
