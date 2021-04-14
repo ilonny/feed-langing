@@ -29,10 +29,10 @@ const addScript = (attribute, text, callback) => {
 }
 
 if (window.outerWidth < 1100) {
-    window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
-    setTimeout(() => {
-        window.location.href = "https://apps.apple.com/us/app/clubhouse-drop-in-audio-chat/id1503133294";
-    }, 30);
+    document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=1.0");
+    document.querySelector('.main-container').style.display = 'none';
+    document.querySelector('.mobile-wrapper').style.display = 'block';
+    window.location.href = "https://apps.apple.com/app/feed/id1506272777";
 }
 document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('cookieNo').addEventListener('click', () => {

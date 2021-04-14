@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1410px, initial-scale=1">
+    <meta name="viewport" content="width=1410px, initial-scale=1" id="viewport">
     <meta name="description"
         content="New social network with real people and true emotions. Find new friends and communities. Share your opinion and talk to anyone on the planet Earth." />
     <meta content="website" property="og:type">
@@ -11,9 +11,7 @@
     <meta content="summary_large_image" name="twitter:card">
     <meta content="!" name="fragment">
     <meta content="Feed App" property="og:site_name">
-    <meta
-        content="./img/og.jpg"
-        property="og:image">
+    <meta content="./img/og.jpg" property="og:image">
     <meta content="Feed App" property="og:title">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -41,7 +39,9 @@
             <div class="section-content">
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="0">
                     <div class="logo-wrapper">
-                        <img src="./img/logo.png" />
+                        <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank">
+                            <img src="./img/logo.png" />
+                        </a>
                     </div>
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
@@ -56,8 +56,10 @@
                     </h2>
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
-                    <a href="https://www.apple.com/app-store/" target="_blank" class="qr-btn">
-                        <img alt="qr_code" src="./img/qr.png" />
+                    <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn">
+                        <div class="qr-border">
+                            <img alt="qr_code" src="./img/qr.png" class="qr-image" />
+                        </div>
                     </a>
                 </div>
                 <div class="cookie-wrapper transition-animate opacity-translate-hidden" data-delay="800"
@@ -85,8 +87,9 @@
                     <img src="./img/phone-1.png" alt="phone with video" />
                     <div class="video-wrapper">
                         <video autoplay="autoplay" muted loop src="./video/1_left.mp4">
-                            <source src="./video/1_left.mp4">
-                            </source>
+                            <!-- <source src="./video/1_left.mp4">
+                            </source> -->
+                            <source src="./video/1_left.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -126,6 +129,7 @@
                                     <source src="./video/Cover.mp4">
                                     </source>
                                 </video>
+                                <img src="./img/blink-3.png" class="blink-3" />
                             </div>
                         </div>
                     </div>
@@ -149,7 +153,7 @@
                                 </source>
                             </video>
                         </div>
-                        <img src="./img/blink-1.png" class="blink-1" />
+                        <!-- <img src="./img/blink-1.png" class="blink-1" /> -->
                     </div>
                 </div>
                 <div class="section-3-title">
@@ -166,7 +170,9 @@
             <div class="section-3-content">
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="0">
                     <div class="logo-wrapper">
-                        <img src="./img/logo.png" />
+                        <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank">
+                            <img src="./img/logo.png" />
+                        </a>
                     </div>
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
@@ -188,8 +194,10 @@
                   <a href="#" class="join-btn">Join to the party</a>
                 </div> -->
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
-                    <a href="https://www.apple.com/app-store/" target="_blank" class="qr-btn">
-                        <img alt="qr_code" src="./img/qr.png" />
+                    <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn">
+                        <div class="qr-border">
+                            <img alt="qr_code" src="./img/qr.png" class="qr-image" />
+                        </div>
                     </a>
                 </div>
             </div>
@@ -220,6 +228,72 @@
                 </div>
             </footer>
         </section>
+    </div>
+    <div class="mobile-wrapper">
+        <div class="row-center transition-animate opacity-translate-hidden" data-delay="0">
+            <div class="logo-wrapper">
+                <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank">
+                    <img src="./img/logo.png" />
+                </a>
+            </div>
+        </div>
+        <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
+            <h1 class="page-title">
+                Film this life <span class="green">together</span>
+            </h1>
+        </div>
+        <div class="row-center transition-animate opacity-translate-hidden" data-delay="400">
+            <h2 class="page-description">
+                FEED is the first social network focused<br />on
+                community, not individuality
+            </h2>
+        </div>
+        <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
+            <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn">
+                <div class="join-btn">Join open beta</div>
+                <!-- <div class="qr-border">
+                    <img alt="qr_code" src="./img/qr.png" class="qr-image" />
+                </div> -->
+            </a>
+        </div>
+        <div class="cookie-wrapper transition-animate opacity-translate-hidden" data-delay="800" id="cookie-wrapper">
+            <button id="cookieNo">No</button>
+            <p>
+                Can we collect
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/1N66NP_u1Ssz0EiEAQtwfS5Inw3ws6Lfn/view?usp=sharing">cookies</a>
+                to ensure<br />
+                you have the best experience?
+            </p>
+            <button id="cookieYes" class="green">Yes</button>
+        </div>
+        <footer>
+            <div class="section-content">
+                <p>
+                    FEED APPLICATION LTD<br />
+                    +421 902 967 201<br />
+                    4th Floor Imperial House,<br />
+                    8 Kean Street, WC2B 4AS<br />
+                    London,<br />
+                    England, Id No: 12753658<br />
+                    info@feedapp.me
+                </p>
+                <div class="links">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1ekqeQMNDzTCpUBxjIezMtEjh1Oo1Q1Ne/view?usp=sharing">Terms
+                        of Service</a>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1N66NP_u1Ssz0EiEAQtwfS5Inw3ws6Lfn/view?usp=sharing">Privacy
+                        Policy</a>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1N66NP_u1Ssz0EiEAQtwfS5Inw3ws6Lfn/view?usp=sharing">App
+                        Cookies</a>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1N66NP_u1Ssz0EiEAQtwfS5Inw3ws6Lfn/view?usp=sharing">Privacy
+                        Notice</a>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
