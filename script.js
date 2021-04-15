@@ -1,8 +1,11 @@
 const fadeOutEffect = () => {
     let fadeTarget = document.getElementById("cookie-wrapper");
+    let fadeTarget2 = document.getElementById("cookie-wrapper-mobile");
     fadeTarget.style.opacity = 0;
+    fadeTarget2.style.opacity = 0;
     setTimeout(() => {
         fadeTarget.style.display = 'none';
+        fadeTarget2.style.display = 'none';
     }, 250);
     // let fadeEffect = setInterval(function () {
     //     if (!fadeTarget.style.opacity) {
@@ -41,6 +44,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         fadeOutEffect();
     })
     document.getElementById('cookieYes').addEventListener('click', () => {
+        fadeOutEffect();
+        addScript({
+            // src: 'https://www.google.com',
+            type: 'text/javascript',
+            // async: null
+        }, 'console.log(1231212)', function () { });
+    })
+    document.getElementById('cookieNoMobile').addEventListener('click', () => {
+        fadeOutEffect();
+    })
+    document.getElementById('cookieYesMobile').addEventListener('click', () => {
         fadeOutEffect();
         addScript({
             // src: 'https://www.google.com',
