@@ -32,7 +32,9 @@ if (window.outerWidth < 1100) {
     document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=1.0");
     document.querySelector('.main-container').style.display = 'none';
     document.querySelector('.mobile-wrapper').style.display = 'block';
-    window.location.href = "https://apps.apple.com/app/feed/id1506272777";
+    setTimeout(() => {
+        window.location.href = "https://apps.apple.com/app/feed/id1506272777";
+    }, 1500)
 }
 document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('cookieNo').addEventListener('click', () => {
