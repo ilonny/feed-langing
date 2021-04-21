@@ -49,7 +49,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // src: 'https://www.google.com',
             type: 'text/javascript',
             // async: null
-        }, 'console.log(1231212)', function () { });
+        }, `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-172862283-1');
+        console.log('ga added');
+        `, function () { });
     })
     document.getElementById('cookieNoMobile').addEventListener('click', () => {
         fadeOutEffect();
@@ -60,7 +65,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // src: 'https://www.google.com',
             type: 'text/javascript',
             // async: null
-        }, 'console.log(1231212)', function () { });
+        }, `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-172862283-1');
+        `, function () { });
     })
     // document.querySelector(".main-container-inner").style.minHeight =
     //     document.body.offsetHeight + "px";
@@ -87,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
     });
     window.addEventListener("scroll", (e) => {
-        console.log("scroll", window.scrollY);
+        // console.log("scroll", window.scrollY);
         const { scrollY } = window;
         if (scrollY > 310 && !animFired2) {
             animFired2 = true;
