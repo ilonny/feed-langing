@@ -157,7 +157,7 @@ body, html {
 
 @media screen and (min-width: 1921px) {
     .screen-section-third {
-        background: url(./img/section-3.png) center -0px no-repeat;
+        /* background: url(./img/section-3.png) center -0px no-repeat; */
         background-size: cover;
     }
 }
@@ -796,7 +796,7 @@ footer {
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    padding-top: 35px;
+    /* padding-top: 35px; */
 }
 
 footer .section-content {
@@ -804,9 +804,9 @@ footer .section-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
