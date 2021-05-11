@@ -33,9 +33,9 @@ const addScript = (attribute, text, callback) => {
 
 if (window.outerWidth < 1100) {
     document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=1.0");
-    document.querySelector('.main-container').style.display = 'none';
-    document.querySelector('.mobile-wrapper').style.display = 'flex';
-    window.location.href = "https://apps.apple.com/app/feed/id1506272777";
+    // document.querySelector('.main-container').style.display = 'none';
+    // document.querySelector('.mobile-wrapper').style.display = 'flex';
+    // window.location.href = "https://apps.apple.com/app/feed/id1506272777";
     // setTimeout(() => {
     // }, 1500)
 }

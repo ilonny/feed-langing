@@ -177,7 +177,7 @@ body, html {
 /* logo */
 
 .logo-wrapper {
-    border-radius: 55px;
+    border-radius: 35px;
     -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
     box-shadow: 0px 17px 92px -7px #601cb0;
     -webkit-animation: blinkLogoShadow 3s linear infinite;
@@ -185,7 +185,7 @@ body, html {
 }
 
 .logo-wrapper img {
-    border-radius: 55px;
+    border-radius: 35px;
 }
 
 @-webkit-keyframes blinkLogoShadow {
@@ -1041,14 +1041,19 @@ footer .section-content .links a:hover {
 
 .mobile-wrapper {
     padding: 20px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 0;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
     min-height: 100vh;
+    background: url("./img/mobile-wrapper.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .mobile-wrapper .logo-wrapper {
-    width: 150px;
+    width: 116px;
 }
 
 .mobile-wrapper .logo-wrapper img {
@@ -1056,26 +1061,31 @@ footer .section-content .links a:hover {
 }
 
 .mobile-wrapper .page-title {
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 30px;
 }
 
 .mobile-wrapper .page-description {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 20px;
     font-weight: 200;
 }
 
+.mobile-wrapper .qr-btn {
+    text-decoration: none !important;
+}
+
 .mobile-wrapper .join-btn {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 16px 43px;
-    text-decoration: none;
+    padding: 10px 28px;
+    text-decoration: none !important;
     background: #26FE8A;
 }
 
 .mobile-wrapper a {
-    text-decoration: none !important;
+    font-weight: 300;
+    /* text-decoration: none !important; */
 }
 
 .mobile-wrapper .cookie-wrapper {
@@ -1084,6 +1094,7 @@ footer .section-content .links a:hover {
 
 .mobile-wrapper .cookie-wrapper p {
     font-size: 11px;
+    line-height: 13px;
 }
 
 .mobile-wrapper footer {
@@ -1095,8 +1106,9 @@ footer .section-content .links a:hover {
     position: static;
     margin: 0;
     margin-left: -20px;
-    margin-bottom: -20px;
-    margin-top: 50px;
+    /* margin-bottom: -20px; */
+    margin-top: 40px;
+    background: rgba(5, 0, 54, 0.3);
 }
 
 .mobile-wrapper footer .section-content {
@@ -1130,4 +1142,19 @@ footer .section-content .links a:hover {
 
 .terms-content a {
     color: #fff;
+}
+
+.mobile-wrapper .cookie-wrapper button {
+    height: 48px;
+    width: 48px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+    .main-container {
+        display: none;
+    }
+    .mobile-wrapper {
+        display: flex;
+    }
 }
