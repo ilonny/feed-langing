@@ -177,7 +177,8 @@ body, html {
 /* logo */
 
 .logo-wrapper {
-    border-radius: 35px;
+    border-radius: 63px;
+    overflow: hidden;
     -webkit-box-shadow: 0px 17px 92px -7px #601cb0;
     box-shadow: 0px 17px 92px -7px #601cb0;
     -webkit-animation: blinkLogoShadow 3s linear infinite;
@@ -185,7 +186,7 @@ body, html {
 }
 
 .logo-wrapper img {
-    border-radius: 35px;
+    /* border-radius: 35px; */
 }
 
 @-webkit-keyframes blinkLogoShadow {
@@ -229,13 +230,17 @@ body, html {
     color: #ffffff;
 }
 
+.page-title.first {
+    font-size: 43px;
+}
+
 .page-title .green {
     color: rgb(46, 255, 120);
 }
 
 .page-description {
     margin-top: 16px;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 24px;
     text-align: center;
     color: #ffffff;
@@ -261,10 +266,12 @@ body, html {
 }
 
 .qr-btn {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     cursor: pointer;
     position: relative;
     z-index: 1;
+    text-decoration: none;
 }
 
 .qr-text {
@@ -792,7 +799,8 @@ footer {
     width: 100%;
     height: 240px;
     background: rgba(5, 0, 54, 0.3);
-    background-image: url(./img/footer-bg.png);
+    /* background: rgba(5, 0, 54, 0.3); */
+    /* background-image: url(./img/footer-bg.png); */
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -949,6 +957,8 @@ footer .section-content .links a:hover {
 }
 
 .cookie-wrapper {
+    position: relative;
+    top: -141px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1061,14 +1071,14 @@ footer .section-content .links a:hover {
 }
 
 .mobile-wrapper .page-title {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 30px;
 }
 
 .mobile-wrapper .page-description {
     font-size: 13px;
     line-height: 20px;
-    font-weight: 200;
+    /* font-weight: 200; */
 }
 
 .mobile-wrapper .qr-btn {
@@ -1156,5 +1166,173 @@ footer .section-content .links a:hover {
     }
     .mobile-wrapper {
         display: flex;
+    }
+}
+
+@media screen and (max-height: 852px) {
+    footer .section-content {
+        height: auto;
+        top: 40px;
+    }
+}
+
+.join-big-button {
+    padding: 24px 40px;
+    background: linear-gradient(108.66deg, #697ECF 14.12%, #57A1BC 37.58%, #29F98D 89.33%, #26FE8A 92.24%);
+    border-radius: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 82px;
+    font-family: 'PT Sans Narrow';
+    animation: rotateJoinBtn 6s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+@keyframes rotateJoinBtn {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes outJoinBtn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(0.3) rotate(200deg);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-height: 852px) {
+    .screen-section-third {
+        margin-top: -600px;
+        min-height: 1086px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo-wrapper {
+        border-radius: 37px;
+    }
+    .join-big-button {
+        padding: 15px 18px;
+        font-size: 35px;
+        border-radius: 18px;
+    }
+    .store-btn {
+        padding: 15px 18px;
+        font-size: 35px;
+        border-radius: 18px;
+    }
+}
+
+.store-buttons {
+    position: relative;
+    top: -141px;
+    text-align: center;
+    transition: all 250ms ease;
+    opacity: 0;
+    transform: rotate(-200deg) scale(0.2);
+    pointer-events: none;
+}
+
+.store-buttons.in-animate {
+    animation: inStoreButtons 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.store-buttons.is-visible {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes inStoreButtons {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    /* 25% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(0.3) rotate(200deg);
+    } */
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.store-btn {
+    padding: 11px 25px;
+    background: linear-gradient(108.66deg, #697ECF 14.12%, #57A1BC 37.58%, #29F98D 89.33%, #26FE8A 92.24%);
+    border-radius: 23px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold !important;
+    font-size: 44px;
+    font-family: 'PT Sans Narrow';
+    display: inline-block;
+}
+
+.store-btn:first-child {
+    margin-bottom: 20px;
+}
+
+.store-btn span {
+    vertical-align: top;
+    line-height: 46px;
+}
+
+.join-big-button.out-animate {
+    animation: outJoinBtn 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.join-big-button.not-visible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.page-descr-small {
+    position: relative;
+    top: -141px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cookie-wrapper, .store-buttons, .page-descr-small {
+        top: -80px;
+    }
+    .store-btn {
+        padding: 10px 14px;
+        font-size: 25px;
+        border-radius: 18px;
+    }
+    .store-btn span {
+        line-height: 27px;
+    }
+    .store-btn img {
+        width: 20px;
     }
 }

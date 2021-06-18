@@ -17,8 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css?v=4" />
+    <link rel="stylesheet" href="style.css?v=11" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172862283-1"></script>
     <link rel="icon"
         href="https://rm-content.s3.amazonaws.com/5e417ad47c5cb605147ce00f/upload-1ed5c18a-782e-4131-9fc0-61bb4f1343ce_144.png"
@@ -35,6 +36,24 @@
 </head>
 
 <body>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '178677297440794');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=178677297440794&ev=PageView&noscript=1" /></noscript>
+
     <div class="main-container">
         <section class="screen-section screen-section-first">
             <div class="section-content">
@@ -46,22 +65,38 @@
                     </div>
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
-                    <h1 class="page-title">
-                        Film this life <span class="green">together</span>
+                    <h1 class="page-title first">
+                        The first social network for<br />
+                        <span class="green">co-streaming video content</span>
                     </h1>
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="400">
                     <h2 class="page-description">
-                        FEED is the first social network focused<br />on
-                        community, not individuality
+                        Push the JOIN button
                     </h2>
                 </div>
-                <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
-                    <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn">
-                        <div class="qr-border">
-                            <img alt="qr_code" src="./img/qr.png" class="qr-image" />
-                        </div>
-                    </a>
+                <br />
+                <br />
+                <br />
+                <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                    <div class="join-big-button"><span>JOIN</span></div>
+                </div>
+                <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                    <div class="store-buttons">
+                        <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="store-btn">
+                            <span>APP STORE</span>
+                            <img src="./img/apple.svg" alt="apple" />
+                        </a>
+                        <br />
+                        <a href="https://play.google.com/store/apps/details?id=com.applicatura.feed" target="_blank"
+                            class="store-btn">
+                            <span>GOOGLE PLAY</span>
+                            <img src="./img/google_play.svg" alt="apple" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row-center transition-animate opacity-translate-hidden page-descr-small" data-delay="600">
+                    <p>Push the JOIN button to download the app</p>
                 </div>
                 <div class="cookie-wrapper transition-animate opacity-translate-hidden" data-delay="800"
                     id="cookie-wrapper">
@@ -87,18 +122,18 @@
                 <div class="screen-section-first--phone transition-animate opacity-hidden" data-delay="600">
                     <img src="./img/phone-1.png" alt="phone with video" />
                     <div class="video-wrapper">
-                        <video autoplay="autoplay" muted loop src="./video/1_left.mp4">
-                            <!-- <source src="./video/1_left.mp4">
+                        <video autoplay="autoplay" muted loop src="./video/left.mp4">
+                            <!-- <source src="./video/left.mp4">
                             </source> -->
-                            <source src="./video/1_left.mp4" type="video/mp4" />
+                            <source src="./video/left.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
                 <div class="screen-section-first--phone-2 transition-animate opacity-hidden" data-delay="600">
                     <img src="./img/phone-2.png" alt="phone with video second" />
                     <div class="video-wrapper">
-                        <video autoplay="autoplay" muted loop src="./video/1_right.mp4">
-                            <source src="./video/1_right.mp4">
+                        <video autoplay="autoplay" muted loop src="./video/right.mp4">
+                            <source src="./video/right.mp4">
                             </source>
                         </video>
                     </div>
@@ -126,8 +161,8 @@
                         <img src="./img/phone-3-1.png" />
                         <div class="wrap">
                             <div class="video-wrapper">
-                                <video autoplay="autoplay" muted loop src="./video/Cover.mp4">
-                                    <source src="./video/Cover.mp4">
+                                <video autoplay="autoplay" muted loop src="./video/Cover_new.mp4">
+                                    <source src="./video/Cover_new.mp4">
                                     </source>
                                 </video>
                                 <img src="./img/blink-3.png" class="blink-3" />
@@ -178,28 +213,42 @@
                 </div>
                 <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
                     <h1 class="page-title">
-                        <span class="transition-animate opacity-third-screen-hidden" data-delay="0">Are</span>
-                        <span class="transition-animate opacity-third-screen-hidden" data-delay="400">you</span>
+                        <span class="transition-animate opacity-third-screen-hidden" data-delay="0">Push</span>
+                        <span class="transition-animate opacity-third-screen-hidden" data-delay="400">the</span>
                         <span class="green transition-animate opacity-third-screen-hidden"
-                            data-delay="800">ready</span><span class="transition-animate opacity-third-screen-hidden"
-                            data-delay="800">?</span>
+                            data-delay="800">JOIN</span><span class="transition-animate opacity-third-screen-hidden"
+                            data-delay="1000"> button</span>
                     </h1>
                 </div>
-                <div class="row-center transition-animate opacity-translate-hidden" data-delay="400">
+                <!-- <div class="row-center transition-animate opacity-translate-hidden" data-delay="400">
                     <h2 class="page-description">
                         FEED is the first social network focused<br />
                         on community, not individuality
                     </h2>
-                </div>
+                </div> -->
                 <!-- <div class="row-center">
                   <a href="#" class="join-btn">Join to the party</a>
                 </div> -->
-                <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
-                    <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn">
-                        <div class="qr-border">
-                            <img alt="qr_code" src="./img/qr.png" class="qr-image" />
-                        </div>
-                    </a>
+                <br />
+                <br />
+                <br />
+
+                <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                    <div class="join-big-button"><span>JOIN</span></div>
+                </div>
+                <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                    <div class="store-buttons">
+                        <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="store-btn">
+                            <span>APP STORE</span>
+                            <img src="./img/apple.svg" alt="apple" />
+                        </a>
+                        <br />
+                        <a href="https://play.google.com/store/apps/details?id=com.applicatura.feed" target="_blank"
+                            class="store-btn">
+                            <span>GOOGLE PLAY</span>
+                            <img src="./img/google_play.svg" alt="apple" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <footer>
@@ -238,25 +287,39 @@
             </div>
             <div class="row-center transition-animate opacity-translate-hidden" data-delay="200">
                 <h1 class="page-title">
-                    Film this life <span class="green">together</span>
+                    The first social network for<br />
+                    <span class="green">co-streaming video content</span>
                 </h1>
             </div>
             <div class="row-center transition-animate opacity-translate-hidden" data-delay="400">
                 <h2 class="page-description">
-                    FEED is the first social network focused<br />on
-                    community, not individuality
+                    Push the JOIN button
                 </h2>
             </div>
         </div>
+        <br/>
         <div>
-            <div class="row-center transition-animate opacity-translate-hidden" data-delay="600">
-                <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="qr-btn" style="margin: 0">
-                    <div class="join-btn" style="margin: 0">Join open beta</div>
-                    <!-- <div class="qr-border">
-                    <img alt="qr_code" src="./img/qr.png" class="qr-image" />
-                </div> -->
-                </a>
+            <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                <div class="join-big-button"><span>JOIN</span></div>
             </div>
+            <div class="row-center transition-animate opacity-translate-hidden " data-delay="600">
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/app/feed/id1506272777" target="_blank" class="store-btn">
+                        <span>APP STORE</span>
+                        <img src="./img/apple.svg" alt="apple" />
+                    </a>
+                    <br />
+                    <a href="https://play.google.com/store/apps/details?id=com.applicatura.feed" target="_blank"
+                        class="store-btn">
+                        <span>GOOGLE PLAY</span>
+                        <img src="./img/google_play.svg" alt="apple" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row-center transition-animate opacity-translate-hidden page-descr-small" data-delay="600">
+            <p>Push the JOIN button to download the app</p>
         </div>
         <div>
             <div style="box-sizing: border-box; padding: 0px 20px;">
@@ -280,8 +343,7 @@
                         +421 902 967 201<br />
                         4th Floor Imperial House,<br />
                         8 Kean Street, WC2B 4AS<br />
-                        London,<br />
-                        England, Id No: 12753658<br />
+                        London, England, Id No: 12753658<br />
                         info@feedapp.me
                     </p>
                     <div class="links">
@@ -299,7 +361,7 @@
             </footer>
         </div>
     </div>
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=4"></script>
 </body>
 
 </html>

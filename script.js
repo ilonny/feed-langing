@@ -40,6 +40,36 @@ if (window.outerWidth < 1100) {
     // }, 1500)
 }
 document.addEventListener("DOMContentLoaded", function (event) {
+    const cookieAgreement = localStorage.getItem('cookieAgreement');
+    if (cookieAgreement) {
+        fadeOutEffect();
+        addScript({
+            // src: 'https://www.google.com',
+            type: 'text/javascript',
+            // async: null
+        }, `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-172862283-1');
+        console.log('ga added');
+        `, function () { });
+    }
+    const joinButtons = Array.from(document.querySelectorAll('.join-big-button'))
+    joinButtons.forEach(el => {
+        el.addEventListener('click', () => {
+            console.log('clicked');
+            el.classList.add('out-animate')
+            setTimeout(() => {
+                joinButtons.forEach(elI => elI.classList.add('not-visible'));
+            }, 379);
+            Array.from(document.querySelectorAll('.store-buttons')).forEach(storeButtons => {
+                storeButtons.classList.add('in-animate');
+                setTimeout(() => {
+                    storeButtons.classList.add('is-visible');
+                }, 379);
+            });
+        })
+    })
     document.getElementById('cookieNo').addEventListener('click', () => {
         fadeOutEffect();
     })
@@ -55,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         gtag('config', 'UA-172862283-1');
         console.log('ga added');
         `, function () { });
+        localStorage.setItem('cookieAgreement', 'yes');
     })
     document.getElementById('cookieNoMobile').addEventListener('click', () => {
         fadeOutEffect();
@@ -70,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             gtag('js', new Date());
             gtag('config', 'UA-172862283-1');
         `, function () { });
+        localStorage.setItem('cookieAgreement', 'yes');
     })
     // document.querySelector(".main-container-inner").style.minHeight =
     //     document.body.offsetHeight + "px";
@@ -200,4 +232,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     // parallax(".phone-3-1", -0.1);
+
 });
