@@ -958,7 +958,7 @@ footer .section-content .links a:hover {
 
 .cookie-wrapper {
     position: relative;
-    top: -141px;
+    /* top: -141px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1246,12 +1246,12 @@ footer .section-content .links a:hover {
 
 .store-buttons {
     position: relative;
-    top: -141px;
+    /* top: -141px; */
     text-align: center;
     transition: all 250ms ease;
-    opacity: 0;
-    transform: rotate(-200deg) scale(0.2);
-    pointer-events: none;
+    /* opacity: 0; */
+    /* transform: rotate(-200deg) scale(0.2); */
+    /* pointer-events: none; */
 }
 
 .store-buttons.in-animate {
@@ -1314,7 +1314,7 @@ footer .section-content .links a:hover {
 
 .page-descr-small {
     position: relative;
-    top: -141px;
+    /* top: -141px; */
     color: #fff;
     font-weight: 300;
     font-size: 12px;
@@ -1322,7 +1322,7 @@ footer .section-content .links a:hover {
 
 @media screen and (max-width: 1000px) {
     .cookie-wrapper, .store-buttons, .page-descr-small {
-        top: -80px;
+        /* top: -80px; */
     }
     .store-btn {
         padding: 10px 14px;

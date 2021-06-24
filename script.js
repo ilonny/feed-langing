@@ -21,6 +21,26 @@ const fadeOutEffect = () => {
 // function removeCookieWrapper = () => {
 // }
 
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+
 const addScript = (attribute, text, callback) => {
     var s = document.createElement('script');
     for (var attr in attribute) {
@@ -36,6 +56,12 @@ if (window.outerWidth < 1100) {
     // document.querySelector('.main-container').style.display = 'none';
     // document.querySelector('.mobile-wrapper').style.display = 'flex';
     // window.location.href = "https://apps.apple.com/app/feed/id1506272777";
+    if (getMobileOperatingSystem() == 'iOS') {
+        window.location.href = "https://apps.apple.com/app/feed/id1506272777";
+    }
+    if (getMobileOperatingSystem() == 'Android') {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.applicatura.feed";
+    }
     // setTimeout(() => {
     // }, 1500)
 }
