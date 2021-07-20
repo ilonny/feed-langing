@@ -236,6 +236,7 @@ body, html {
   }
   .mobile-container {
     display: block;
+    height: 100vh;
   }
 }
 
@@ -252,5 +253,22 @@ body, html {
   .toggle-sound img {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .flex-row {
+    transform: scale(0.9)
+  }
+}
+@media screen and (max-height: 800px) {
+  .flex-row {
+    transform: scale(0.8)
+  }
+}
+
+@media screen and (max-height: 760px) {
+  .flex-row {
+    transform: scale(0.7)
   }
 }
